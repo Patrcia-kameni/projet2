@@ -1,0 +1,22 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body .nav-bar .search-bar{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 100%;
+   background-color: #eaeaea;
+}
