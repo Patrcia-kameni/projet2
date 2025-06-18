@@ -1,4 +1,4 @@
-/****** General ***********/
+@import '_vendors/_normalize.css';
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -9,6 +9,7 @@
   --filter-bg-color: #DEEBFF;
 }
 
+/****** General ***********/
 .fa-solid {
   color: var(--main-color);
 }

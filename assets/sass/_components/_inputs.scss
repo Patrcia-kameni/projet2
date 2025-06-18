@@ -1,0 +1,12 @@
+/****** General ***********/
+.fa-solid {
+    color: var(--main-color);
+}
+
+body .nav-bar .search-bar{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 100%;
+   background-color: #eaeaea;
+}
