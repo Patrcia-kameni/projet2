@@ -1,12 +1,13 @@
-/****** General ***********/
-.fa-solid {
-    color: var(--main-color);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body .nav-bar .search-bar{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   width: 100%;
-   background-color: #eaeaea;
-}
+/*body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+}*/

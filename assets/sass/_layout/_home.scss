@@ -1,0 +1,92 @@
+main {
+  text-align: center;
+ /* padding: 20px;*/
+
+
+  .hero {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-right: 15px ;
+    padding-left: 15px;
+
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-family: Roboto;
+    }
+
+    &__paragraphe {
+      font-size: 18px;
+      font-weight: 300;
+      font-family: Roboto;
+      margin-bottom: 20px;
+      color: #353535;
+      margin-top: 25px;
+      margin-bottom: 30px;
+
+    }
+
+    &__button {
+      margin-bottom: 30px;
+
+      .search-button {
+        background: linear-gradient(to top, #9356DC, $secondary-color);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 25px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 16px 20px;
+      }
+    }
+
+
+  }
+  .fontionnement{
+    background-color: #fff;
+  }
+
+
+
+
+
+
+
+
+  .filtres {
+    margin: 20px 0;
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .filtres-elts {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+
+      a {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: $text-color;
+
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
