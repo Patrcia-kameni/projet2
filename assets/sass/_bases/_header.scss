@@ -1,5 +1,39 @@
-.logo {
-  width: 60%;
-  margin: 20px auto;
-  display: block;
+.header {
+  height: 63px;
+  width: 375px;
+  background-color: #ffffff;
+  
+  &__logo {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+  }
+
+  &__nav {
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__search {
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  
+
+  &__container {
+    display: inline-flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    background:#ffffff; 
+    padding: 5px 10px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+    text-align: center;
+  }
 }
