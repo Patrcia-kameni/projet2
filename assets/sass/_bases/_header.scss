@@ -1,16 +1,20 @@
 .header {
   height: 63px;
-  width: 375px;
-  background-color: #ffffff;
+  width: 100%;
   
   &__logo {
     width: 60%;
     margin: 20px auto;
     display: flex;
   }
+  
+  &__bar{
+    padding: 10px 0;
+    background-color: #EAEAEA;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25),0 -2px 5px rgba(0, 0, 0, 0.25);
+  }
 
   &__nav {
-    padding: 10px;
     text-align: center;
   }
 
@@ -20,20 +24,22 @@
   }
   
 
-  &__container {
-    display: inline-flex;
-    width: 300px;
-    height: 50px;
+  &__contenair {
+    display: flex;
+    width: 100%;
     align-items: center;
-    background:#ffffff; 
-    padding: 5px 10px;
+    justify-content: center;
+    background:#EAEAEA; 
+    
   }
 
   &__input {
     border: none;
-    outline: none;
-    width: 200px;
-    font-size: 14px;
+    width: 50%;
+    font-size: 18px;
     text-align: center;
+    background-color:inherit;
+    font-weight: 700;
+    color: #353535;
   }
 }
