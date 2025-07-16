@@ -1,6 +1,16 @@
 .header {
-  height: 63px;
+
+   height: 63px;
   width: 100%;
+
+  
+  .shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ 
   
   &__logo {
     width: 60%;
