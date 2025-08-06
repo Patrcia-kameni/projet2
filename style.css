@@ -74,9 +74,10 @@
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* padding: 20px;*/
 }
-* .hero {
+
+/* padding: 20px;*/
+.hero {
   background-color: #f6f6f6;
   padding-bottom: 50px;
   margin-top: 46px;
@@ -85,13 +86,13 @@
   padding-left: 15px;
   text-align: center;
 }
-* .hero__title {
+.hero__title {
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: 700;
   font-family: Roboto;
 }
-* .hero__paragraphe {
+.hero__paragraphe {
   font-size: 18px;
   font-weight: 300;
   font-family: Roboto;
@@ -100,10 +101,10 @@
   margin-top: 25px;
   margin-bottom: 30px;
 }
-* .hero__button {
+.hero__button {
   margin-bottom: 30px;
 }
-* .hero__button .search-button {
+.hero__button .search-button {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   padding: 12px 20px;
@@ -113,18 +114,24 @@
   cursor: pointer;
   padding: 16px 20px;
   box-shadow: 1px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-image 400ms ease-in-out;
 }
-* .fontionnement {
+.hero__button .search-button:active, .hero__button .search-button:focus {
+  color: yellow;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.fontionnement {
   background-color: #fff;
   padding: 60px 15px;
 }
-* .fontionnement__title {
+.fontionnement__title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-* .fontionnement__number {
+.fontionnement__number {
   position: absolute;
   background: #9356DC;
   width: 24px;
@@ -137,13 +144,13 @@
   align-items: center;
   left: -12px;
 }
-* .fontionnement__content {
+.fontionnement__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0 12px;
 }
-* .fontionnement__location {
+.fontionnement__location {
   background: #f6f6f6;
   font-size: 16px;
   font-weight: 500;
@@ -156,14 +163,45 @@
   color: #353535;
   position: relative;
 }
-* .fontionnement__location i {
+.fontionnement__location i {
   margin: 0 10px;
 }
-* .fontionnement__location a i {
+.fontionnement__location a i {
   color: #9356DC;
   display: inline-block;
   margin-left: 10px;
   margin-right: 10Px;
+}
+
+/* animation des coeur favoris*/
+.heart-checkbox {
+  display: none;
+}
+.heart-label {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  transition: all 300ms ease;
+}
+.heart-empty {
+  color: #000;
+  transition: opacity 300ms ease;
+}
+.heart-filled {
+  color: #9356DC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.heart-checkbox:checked + .heart-label .heart-empty {
+  opacity: 0;
+}
+.heart-checkbox:checked + .heart-label .heart-filled {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .restaurants {
