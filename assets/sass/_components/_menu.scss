@@ -46,6 +46,10 @@
         align-items: end;
         padding: 15px;
         box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 300ms ease;
 
     }
 
@@ -108,6 +112,45 @@
         }
 
     }
+    /* animetion des elements du menu*/
+    /* animation au survole des plats avec l'icone de validation */
+
+    .menu__check{
+        position:absolute;
+        right:-80px;
+        top:0;
+        bottom: 0;
+        width: 80px;
+        background-color: #99E2D0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 16px 16px 0;
+        transition: right 300ms ease;
+    }
+
+    .menu__check i{
+        color: #F6F6F6;
+        font-size: 20px;
+        transform:rotate(0deg) ; 
+        transition: transform 200ms ease;
+    }
+
+    /* animation au survole : glissement de l'icone vers la gauche */
+    .menu__content:hover .menu__check{
+        right: 0px;
+        /* l'icone glisse de -80px a 0px */
+    }
+
+    .menu__content:hover .menu__check i{
+        transform: rotate(360deg);
+    }
+     .menu__content:hover{
+        padding-right: 95px;
+        
+     }
+
+
 
 
 }
