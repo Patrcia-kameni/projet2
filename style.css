@@ -178,11 +178,9 @@
 }
 
 /* animation des coeur favoris*/
-.heart{
-
-}
+.heart {
   /* section commantaire animation des coeur avec hover*/
-
+}
 .heart-checkbox {
   display: none;
 }
@@ -212,6 +210,7 @@
   opacity: 1;
   transform: scale(1.1);
 }
+
 .restaurants {
   background: #F6F6F6;
   padding: 20px 15px;
