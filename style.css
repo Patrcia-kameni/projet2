@@ -149,6 +149,11 @@
   gap: 20px;
   padding: 0 12px;
 }
+@media (min-width: 1024px) {
+  .fontionnement__content {
+    flex-direction: row;
+  }
+}
 .fontionnement__location {
   background: #f6f6f6;
   font-size: 16px;
@@ -173,9 +178,11 @@
 }
 
 /* animation des coeur favoris*/
-.heart {
-  /* section commantaire animation des coeur avec hover*/
+.heart{
+
 }
+  /* section commantaire animation des coeur avec hover*/
+
 .heart-checkbox {
   display: none;
 }
@@ -213,6 +220,16 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media (min-width: 1024px) {
+  .restaurants__cardscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 .restaurants__title {
   font-size: 24px;
@@ -382,10 +399,17 @@
   transition: right 300ms ease;
 }
 .menu .menu__check i {
-  color: #F6F6F6;
+  color: #99E2D0;
   font-size: 20px;
   transform: rotate(0deg);
   transition: transform 200ms ease;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu .menu__content:hover .menu__check {
   right: 0px;
@@ -414,6 +438,17 @@
   flex-direction: column;
   gap: 10px;
 }
+.footer ul .txt__footer {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .footer ul {
+    flex-direction: row-reverse;
+  }
+  .footer ul .txt__footer {
+    display: flex;
+  }
+}
 .footer ul li {
   display: flex;
   gap: 10px;
@@ -422,6 +457,38 @@
   height: auto;
 }
 
+.footer__destop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .footer__destop {
+    display: block;
+    background: hsl(0, 0%, 18%);
+    color: white;
+    padding: 15px;
+    position: relative;
+  }
+  .footer__destop .contact-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .footer__destop ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    left: 55%;
+  }
+  .footer__destop .txt__footer {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
 .paletteimage img {
   width: 100%;
   height: 275px;
