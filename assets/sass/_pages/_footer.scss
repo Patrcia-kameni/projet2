@@ -1,7 +1,15 @@
-.footer {
+footer {
   background: hsl(0, 0%, 18%);
   color: white;
   padding: 15px;
+
+  .footer__ohmyfood{
+     font-family: Shrikhand;
+     font-size: 18px;
+     font-weight: 400;
+     margin-top: 20px;
+     margin-bottom: 20px;
+  }
 
   .contact-link {
     color: white;
@@ -14,7 +22,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
     .txt__footer {
       display: none;

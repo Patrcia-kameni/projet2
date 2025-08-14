@@ -54,17 +54,28 @@
     }
 
     &__text {
-        h2 {
+        // limite la largeur pour permettre la troncature
+        flex:1;
+        min-width: 0;//permet au flex iten de se retrecir en dessous de sa taille de contenu
+        h2 ,h3{
             font-size: 18px;
             font-weight: 500;
             font-family: Roboto;
             margin-bottom: 10px;
+            // troncature du texte avec ellipsis
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         p {
             font-family: Roboto;
             font-weight: 300;
             font-size: 15px;
+             // troncature du texte avec ellipsis
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         &__prix {
