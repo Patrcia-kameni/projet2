@@ -7,6 +7,15 @@
     z-index: 100;
     top: -60px;
 
+    @media (min-width: 1024px) {
+
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    
+
 
 
     &__header {
@@ -15,6 +24,11 @@
         justify-content: SPACE-BETWEEN;
         align-items: baseline;
         margin-bottom: 30px;
+
+        @media (min-width: 1024px) {
+             justify-content: center;
+            
+        }
 
         i {
             width: 22px;
@@ -28,6 +42,10 @@
         font-family: Shrikhand;
         font-size: 24px;
         font-weight: 400;
+
+         @media (min-width: 1024px) {
+            margin-right: 20px;
+         }
     }
 
     &__parent {

@@ -3,12 +3,27 @@ footer {
   color: white;
   padding: 15px;
 
-  .footer__ohmyfood{
-     font-family: Shrikhand;
-     font-size: 18px;
-     font-weight: 400;
-     margin-top: 20px;
-     margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+
+  .footer__ohmyfood {
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      margin-left: 40px;
+      margin-right: 40px;
+
+    }
+
   }
 
   .contact-link {
@@ -24,6 +39,11 @@ footer {
     flex-direction: column;
     gap: 20px;
 
+    @media (min-width: 1024px) {
+      flex-direction: revert;
+    }
+
+
     .txt__footer {
       display: none;
     }
@@ -31,7 +51,7 @@ footer {
 
 
     @media (min-width: 1024px) {
-      flex-direction: row-reverse;
+    
 
       .txt__footer {
         display: flex;
@@ -78,7 +98,7 @@ footer {
       flex-direction: row;
       gap: 20px;
       position: absolute;
-      left:55%;
+      left: 55%;
     }
 
     .txt__footer {
@@ -87,7 +107,9 @@ footer {
 
   }
 
-  .footer{
+  .footer {
     display: none;
   }
+
+  
 }

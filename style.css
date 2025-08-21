@@ -406,11 +406,24 @@
   /* animation au survole des plats avec l'icone de validation */
   /* animation au survole : glissement de l'icone vers la gauche */
 }
+@media (min-width: 1024px) {
+  .menu {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
 .menu__header {
   display: flex;
   justify-content: SPACE-BETWEEN;
   align-items: baseline;
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .menu__header {
+    justify-content: center;
+  }
 }
 .menu__header i {
   width: 22px;
@@ -420,6 +433,11 @@
   font-family: Shrikhand;
   font-size: 24px;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .menu__titre {
+    margin-right: 20px;
+  }
 }
 .menu__parent {
   display: flex;
@@ -542,12 +560,25 @@ footer {
   color: white;
   padding: 15px;
 }
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
 footer .footer__ohmyfood {
   font-family: Shrikhand;
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  footer .footer__ohmyfood {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 footer .contact-link {
   color: white;
@@ -560,13 +591,15 @@ footer ul {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 1024px) {
+  footer ul {
+    flex-direction: revert;
+  }
+}
 footer ul .txt__footer {
   display: none;
 }
 @media (min-width: 1024px) {
-  footer ul {
-    flex-direction: row-reverse;
-  }
   footer ul .txt__footer {
     display: flex;
   }
