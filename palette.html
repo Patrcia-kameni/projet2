@@ -28,7 +28,7 @@
 
 <body>
     <header class="header">
-         <div class="header__title">ohmyfood</div>
+        <div class="header__title">ohmyfood</div>
         <a href="index.html"> <i class="fa-solid fa-arrow-left fa-2xl"></i></a>
     </header> <!-- fin du header-->
     <main>
@@ -40,8 +40,15 @@
         <section class="menu">
             <div class="menu__header">
                 <h1 class="menu__titre"> La palette du goût</h1>
-                <i class="fa-regular fa-heart"></i>
+                <div class="card-icone">
+                    <input type="checkbox" id="heart-1" class="heart-checkbox">
+                    <label for="heart-1" class="heart-label">
+                        <i class="fa-regular fa-heart heart-empty"></i>
+                        <i class="fa-solid fa-heart heart-filled"></i>
+                    </label>
+                </div>
             </div>
+           
             <h2 class="menu__soustitre">Entrees</h2>
             <div class="menu__parent">
                 <div class="menu__content">
@@ -129,7 +136,7 @@
 
             </div>
 
-              <br> <br>
+            <br> <br>
             <h2 class="menu__soustitre">Desserts</h2>
             <div class="menu__parent">
                 <div class="menu__content">
@@ -188,7 +195,7 @@
             <li> <a href="mailto:adresse@email.com" class="contact-link">Contact</a></li>
         </ul>
     </footer>
-     
+
 </body>
 
 </html>

@@ -28,9 +28,9 @@
 
 <body>
     <header class="header">
-         <div class="header__title">ohmyfood</div>
+        <div class="header__title">ohmyfood</div>
         <a href="index.html"> <i class="fa-solid fa-arrow-left fa-2xl"></i></a>
-   </header> <!-- fin du header-->
+    </header> <!-- fin du header-->
     <main>
         <section class="paletteimage">
             <img src="assets/images/restaurants/c336e069403bf1f2e68f215ddea32f9d8e8176fb (1).jpg"
@@ -41,7 +41,13 @@
         <section class="menu">
             <div class="menu__header">
                 <h1 class="menu__titre"> A la française</h1>
-                <i class="fa-regular fa-heart"></i>
+                <div class="card-icone">
+                    <input type="checkbox" id="heart-1" class="heart-checkbox">
+                    <label for="heart-1" class="heart-label">
+                        <i class="fa-regular fa-heart heart-empty"></i>
+                        <i class="fa-solid fa-heart heart-filled"></i>
+                    </label>
+                </div>
             </div>
             <h2 class="menu__soustitre">Entrees</h2>
             <div class="menu__parent">
@@ -73,11 +79,11 @@
 
                 <div class="menu__content">
                     <div class="menu__text">
-                        <h2 class="menu__recette">Soupe a l'oignon  </h2>
+                        <h2 class="menu__recette">Soupe a l'oignon </h2>
                         <p class="menu__paragraphe">Revisite</p>
                     </div>
                     <div class="menu__prix">
-                       20€
+                        20€
                     </div>
                     <div class="menu__check">
                         <i class="fa-solid fa-check"></i>
@@ -179,7 +185,7 @@
         </section>
 
     </main>
-   <footer>
+    <footer>
         <h4 class="footer__ohmyfood">ohmyfood</h4>
         <ul>
             <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>

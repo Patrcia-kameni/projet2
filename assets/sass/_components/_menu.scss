@@ -7,6 +7,26 @@
     z-index: 100;
     top: -60px;
 
+    /* annimation keyframes pour l'aparition des plats
+    * cette annimation faire apparaitre les plats en les faissant monté legerement
+    * tout en augmentant progressivement leurs opacite
+    */
+
+    @keyframes appear {
+        0% {
+
+            //postion initiale:legerement plus bas et invisible
+            transform: translateY(20px);
+            opacity:0;
+
+        }
+        100% {
+            //position finale a sa place normale et completement visible
+            transform: translate(O);
+            opacity:1;
+        }
+    }
+
     @media (min-width: 1024px) {
 
         margin-left: 100px;
@@ -14,7 +34,7 @@
         padding-left: 75px;
         padding-right: 75px;
     }
-    
+
 
 
 
@@ -26,8 +46,8 @@
         margin-bottom: 30px;
 
         @media (min-width: 1024px) {
-             justify-content: center;
-            
+            justify-content: center;
+
         }
 
         i {
@@ -43,9 +63,9 @@
         font-size: 24px;
         font-weight: 400;
 
-         @media (min-width: 1024px) {
+        @media (min-width: 1024px) {
             margin-right: 20px;
-         }
+        }
     }
 
     &__parent {
@@ -69,13 +89,54 @@
         cursor: pointer;
         transition: all 300ms ease;
 
+        /* animation d'aparition progrssive des plats 
+        * - appear : nom de l'animation definir dans les keyframes
+        * - 0.8S :la duree de l'animation (800ms)
+        * - ease : fontion de timing pour un mouvement naturel
+        * forwards: conserve l'etat final de l'animation apre son execution
+        */
+
+        animation: appear 0.8s ease forwards;
+        opacity: 0;  // etat initiale invisible avant le debut de l'animation
+
+        /* application d'un delai progressif selon la progression du plat
+        * chaque plat apparais avec un decalage de 200ms parraport au precedent
+        * ce qui crée un effet de cascade du haut vers le bas
+        */
+        &:nth-child(1){
+            animation-delay: 0.1s;
+        }
+
+        &:nth-child(2){
+            animation-delay: 0.3s;
+        }
+
+        &:nth-child(3){
+            animation-delay: 0.5s;
+        }
+
+        &:nth-child(4){
+            animation-delay: 0.7s;
+        }
+
+        &:nth-child(5){
+            animation-delay: 0.9s;
+        }
+
+
+
+
+
+
     }
 
     &__text {
         // limite la largeur pour permettre la troncature
-        flex:1;
-        min-width: 0;//permet au flex iten de se retrecir en dessous de sa taille de contenu
-        h2 ,h3{
+        flex: 1;
+        min-width: 0; //permet au flex iten de se retrecir en dessous de sa taille de contenu
+
+        h2,
+        h3 {
             font-size: 18px;
             font-weight: 500;
             font-family: Roboto;
@@ -90,7 +151,7 @@
             font-family: Roboto;
             font-weight: 300;
             font-size: 15px;
-             // troncature du texte avec ellipsis
+            // troncature du texte avec ellipsis
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -109,6 +170,7 @@
         font-family: Roboto;
         text-transform: uppercase;
         position: relative;
+        margin-top: 20px;
 
         &::after {
             position: absolute;
@@ -137,6 +199,10 @@
             cursor: pointer;
             padding: 16px 20px;
             box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+            &:hover {
+                background: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.590196078));
+            }
 
         }
 

@@ -28,19 +28,24 @@
 
 <body>
     <header class="header">
-         <div class="header__title">ohmyfood</div>
+        <div class="header__title">ohmyfood</div>
         <a href="index.html"> <i class="fa-solid fa-arrow-left fa-2xl"></i></a>
     </header> <!-- fin du header-->
     <main>
         <section class="paletteimage">
-            <img src="assets/images/restaurants/N_Y88TWmGwA.jpg">
-                alt="carte menue d'un restaurant">
+            <img src="assets/images/restaurants/N_Y88TWmGwA.jpg" alt="carte menue d'un restaurant">
 
         </section>
         <section class="menu">
             <div class="menu__header">
                 <h1 class="menu__titre"> La note enchantee</h1>
-                <i class="fa-regular fa-heart"></i>
+                <div class="card-icone">
+                    <input type="checkbox" id="heart-1" class="heart-checkbox">
+                    <label for="heart-1" class="heart-label">
+                        <i class="fa-regular fa-heart heart-empty"></i>
+                        <i class="fa-solid fa-heart heart-filled"></i>
+                    </label>
+                </div>
             </div>
             <h2 class="menu__soustitre">Entrees</h2>
             <div class="menu__parent">
@@ -60,7 +65,7 @@
                 <div class="menu__content">
                     <div class="menu__text">
                         <h2 class="menu__recette">Caviar oscietre</h2>
-                        <p class="menu__paragraphe">Sur blini a la farine de ble noir  </p>
+                        <p class="menu__paragraphe">Sur blini a la farine de ble noir </p>
                     </div>
                     <div class="menu__prix">
                         35€
@@ -73,10 +78,10 @@
                 <div class="menu__content">
                     <div class="menu__text">
                         <h2 class="menu__recette">Homard et espuma de potiron </h2>
-                        <p class="menu__paragraphe">Marinee  au zestes d'orange</p>
+                        <p class="menu__paragraphe">Marinee au zestes d'orange</p>
                     </div>
                     <div class="menu__prix">
-                       20€
+                        20€
                     </div>
                     <div class="menu__check">
                         <i class="fa-solid fa-check"></i>
@@ -191,7 +196,7 @@
         </section>
 
     </main>
-   <footer>
+    <footer>
         <h4 class="footer__ohmyfood">ohmyfood</h4>
         <ul>
             <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
