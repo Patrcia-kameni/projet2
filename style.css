@@ -339,7 +339,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
-    max-width: 1200px;
     margin: 0 auto;
     margin-left: 50px;
     margin-right: 50px;
@@ -484,8 +483,18 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 300ms ease;
+  /* animation d'aparition progrssive des plats 
+  * - appear : nom de l'animation definir dans les keyframes
+  * - 0.8S :la duree de l'animation (800ms)
+  * - ease : fontion de timing pour un mouvement naturel
+  * forwards: conserve l'etat final de l'animation apre son execution
+  */
   animation: appear 0.8s ease forwards;
   opacity: 0;
+  /* application d'un delai progressif selon la progression du plat
+  * chaque plat apparais avec un decalage de 200ms parraport au precedent
+  * ce qui crée un effet de cascade du haut vers le bas
+  */
 }
 .menu__content:nth-child(1) {
   animation-delay: 0.1s;
